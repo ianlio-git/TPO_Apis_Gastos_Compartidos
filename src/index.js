@@ -1,15 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// import App from "./app/App";
-import LandingPage from "./landing page/LandingPage";
 import reportWebVitals from "./reportWebVitals";
+//our components
+// import App from "./app/App"; //testing component
+import LandingPage from "./landing page/LandingPage";
+import RegisterForm from "./register form/RegisterForm";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     <LandingPage />
+    <RegisterForm />
   </React.StrictMode>
 );
 
