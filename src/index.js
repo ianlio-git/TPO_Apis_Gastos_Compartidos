@@ -5,16 +5,19 @@ import reportWebVitals from "./reportWebVitals";
 //our components
 // import App from "./app/App"; //testing component
 import LandingPage from "./landing page/LandingPage";
-import RegisterPage from "./register page/RegisterPage";
+import RegisterPage from "./register/RegisterPage";
 import LoginPage from "./loging page/LoginPage";
+import ErrorLogin from "./loging page/error page/LoginPageErr";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  // comenta con ctrl + / para poder ver las otras pantallas
   <React.StrictMode>
     {/* <App /> */}
     <LandingPage />
-    <RegisterPage />
-    <LoginPage />
+    {/* <RegisterPage /> */}
+    {/* <LoginPage /> */}
+    {/* <ErrorLogin /> */}
   </React.StrictMode>
 );
 
