@@ -5,14 +5,16 @@ import reportWebVitals from "./reportWebVitals";
 //our components
 // import App from "./app/App"; //testing component
 import LandingPage from "./landing page/LandingPage";
-import RegisterForm from "./register form/RegisterForm";
+import RegisterPage from "./register page/RegisterPage";
+import LoginPage from "./loging page/LoginPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     <LandingPage />
-    <RegisterForm />
+    <RegisterPage />
+    <LoginPage />
   </React.StrictMode>
 );
 
