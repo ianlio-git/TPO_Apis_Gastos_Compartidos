@@ -38,7 +38,7 @@ function RegisterPage() {
               id="name"
               name="name"
               placeholder="Nombre completo"
-              className="w-full px-4 py-2 text-gray-700 border rounded-3xl focus:outline-none shadow-md"
+              className="w-full px-4 py-2  border rounded-3xl focus:outline-none shadow-md hover:border-blue-600"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
@@ -48,7 +48,7 @@ function RegisterPage() {
               id="email"
               name="email"
               placeholder="Correo electrónico"
-              className="w-full px-4 py-2 text-gray-700 border rounded-3xl focus:outline-none shadow-md"
+              className="w-full px-4 py-2 text-gray-700 border rounded-3xl focus:outline-none shadow-md hover:border-blue-600"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -58,7 +58,7 @@ function RegisterPage() {
               id="password"
               name="password"
               placeholder="Contraseña"
-              className="w-full px-4 py-2 text-gray-700 border rounded-3xl focus:outline-none shadow-md"
+              className="w-full px-4 py-2 text-gray-700 border rounded-3xl focus:outline-none shadow-md hover:border-blue-600"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
@@ -68,14 +68,14 @@ function RegisterPage() {
               id="confirm-password"
               name="confirm-password"
               placeholder="Confirmar contraseña"
-              className="w-full px-4 py-2 text-gray-700 border rounded-3xl focus:outline-none shadow-md"
+              className="w-full px-4 py-2 text-gray-700 border rounded-3xl focus:outline-none shadow-md hover:border-blue-600"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
             />
             <button
               type="submit"
-              className={`${buttonClass} bg-blue-500 hover:bg-blue-700 focus:ring-blue-300`}
+              className={`${buttonClass} bg-blue-500 hover:bg-blue-700 focus:ring-blue-300 `}
             >
               Registrarse
             </button>
@@ -85,19 +85,17 @@ function RegisterPage() {
               <div className="absolute inset-0 flex items-center">
                 <div className="w-full" />
               </div>
-              <div className="relative flex justify-center ">
-                <span className="text-gray-500 ">¿Ya tienes una cuenta?</span>
-              </div>
             </div>
             <div className="mt-6">
-              <button
-                onClick={() => {
-                  /* Aquí iría la lógica para volver a la página de inicio */
-                }}
-                className={`${buttonClass} bg-white text-blue-600 border border-blue-600 hover:bg-gray-50`}
-              >
-                Iniciar sesión
-              </button>
+              <p>
+                ¿Ya tienes una cuenta?{" "}
+                <a
+                  href="LandingPage.js"
+                  className="hover:underline hover:text-blue-500"
+                >
+                  Inicia sesión
+                </a>
+              </p>
             </div>
           </div>
         </div>
