@@ -8,16 +8,18 @@ import LandingPage from "./landing page/LandingPage";
 import RegisterPage from "./register/RegisterPage";
 import LoginPage from "./loging page/LoginPage";
 import ErrorLogin from "./loging page/error page/LoginPageErr";
+import Dashboard from "./dashboard page/Dashboard";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // comenta con ctrl + / para poder ver las otras pantallas
   <React.StrictMode>
     {/* <App /> */}
-    <LandingPage />
+    {/* <LandingPage /> */}
     {/* <RegisterPage /> */}
-    <LoginPage />
+    {/* <LoginPage /> */}
     {/* <ErrorLogin /> */}
+    <Dashboard />
   </React.StrictMode>
 );
 
