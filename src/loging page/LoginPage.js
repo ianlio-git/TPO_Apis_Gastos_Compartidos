@@ -41,7 +41,7 @@ function LoginModal({ onClose }) {
           <form className="mt-4 px-7 py-3 space-y-4" onSubmit={handleSubmit}>
             <input
               type="email"
-              className="w-full px-4 py-2 text-gray-700 border rounded-3xl focus:outline-none shadow-md"
+              className="w-full px-4 py-2 text-gray-700 border rounded-3xl focus:outline-none shadow-md hover:border-blue-600"
               placeholder="Correo electrónico"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -49,7 +49,7 @@ function LoginModal({ onClose }) {
             />
             <input
               type="password"
-              className="w-full px-4 py-2 text-gray-700 border rounded-3xl focus:outline-none shadow-md"
+              className="w-full px-4 py-2 text-gray-700 border rounded-3xl focus:outline-none shadow-md hover:border-blue-600"
               placeholder="Contraseña"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -62,7 +62,7 @@ function LoginModal({ onClose }) {
                   id="rememberMe"
                   checked={rememberMe}
                   onChange={(e) => setRememberMe(e.target.checked)}
-                  className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                  className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded "
                 />
                 <label
                   htmlFor="rememberMe"
