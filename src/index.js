@@ -9,6 +9,7 @@ import RegisterPage from "./register/RegisterPage";
 import LoginPage from "./loging page/LoginPage";
 import ErrorLogin from "./loging page/error page/LoginPageErr";
 import Dashboard from "./dashboard page/Dashboard";
+import MainPage from "./main page/MainPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,7 +20,8 @@ root.render(
     {/* <RegisterPage /> */}
     {/* <LoginPage /> */}
     {/* <ErrorLogin /> */}
-    <Dashboard />
+    {/* <Dashboard /> */}
+    <MainPage />
   </React.StrictMode>
 );
 
