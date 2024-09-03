@@ -12,7 +12,9 @@ export default function Dashboard() {
       {/* Sidebar */}
       <div className="w-64 bg-white shadow-md">
         <div className="p-4">
-          <h1 className="text-2xl font-bold text-green-600">Splitwise</h1>
+          <h1 className="text-2xl font-bold text-green-600">
+            Gastos Compartidos
+          </h1>
         </div>
         <nav className="mt-4">
           <a
@@ -40,7 +42,7 @@ export default function Dashboard() {
         <div className="absolute bottom-0 p-4 w-64">
           <div className="bg-white rounded-lg shadow p-4">
             <h3 className="font-semibold text-gray-700">Saldo total</h3>
-            <p className="text-2xl font-bold text-green-600">$150.00</p>
+            <p className="text-2xl font-bold text-green-600">$50.00</p>
             <p className="text-sm text-gray-500">Te deben</p>
           </div>
         </div>
