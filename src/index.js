@@ -15,9 +15,9 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     <LandingPage />
-    <RegisterPage />
-    <LoginPage />
-    <ErrorLogin />
+    {/* <RegisterPage /> */}
+    {/* <LoginPage /> */}
+    {/* <ErrorLogin /> */}
   </React.StrictMode>
 );
 
