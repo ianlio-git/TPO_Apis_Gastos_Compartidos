@@ -1,8 +1,15 @@
 import React from "react";
-import calculate from "./assets landing page/png/calcular.png";
-import tikets from "./assets landing page/png/tikets.png";
-import Divide from "./assets landing page/png/dividir.png";
+import calculate from "../assets/calcular.png";
+import tikets from "../assets/tikets.png";
+import Divide from "../assets/dividir.png";
+import { useNavigate } from "react-router-dom";
+
 function LandingPage() {
+  const navigate = useNavigate();
+
+  const goToLogin = () => {
+    navigate("/login");
+  };
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       <header className="bg-white shadow">
@@ -10,7 +17,10 @@ function LandingPage() {
           <div className="flex justify-between items-center">
             <div className="text-xl font-semibold text-gray-700">Split-it</div>
             <div className="space-x-4">
-              <button className="text-gray-800 hover:text-gray-600">
+              <button
+                onClick={goToLogin}
+                className="text-gray-800 hover:text-gray-600"
+              >
                 Iniciar Sesión
               </button>
               <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap-icons/font/bootstrap-icons.css"; // Asegúrate de importar Bootstrap Icons
+import { Route } from "react-router-dom";
 
 function LoginModal({ onClose }) {
   const [email, setEmail] = useState("");
@@ -16,6 +17,8 @@ function LoginModal({ onClose }) {
       "Recuérdame:",
       rememberMe
     );
+
+    <link to="../pages/Dashboard"></link>;
   };
 
   const buttonClass =
@@ -38,7 +41,9 @@ function LoginModal({ onClose }) {
           <h3 className="text-lg leading-6 font-medium text-gray-900">
             Bienvenido a Split-it!
           </h3>
+          {/* Aca esta el form  */}
           <form className="mt-4 px-7 py-3 space-y-4" onSubmit={handleSubmit}>
+            {" "}
             <input
               type="email"
               className="w-full px-4 py-2 text-gray-700 border rounded-3xl focus:outline-none shadow-md hover:border-blue-600"
