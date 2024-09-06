@@ -1,6 +1,30 @@
 import React, { useState } from "react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
+const Avatar = ({ children, className = "" }) => (
+  <div
+    className={`inline-flex items-center justify-center rounded-full bg-gray-200 ${className}`}
+  >
+    {children}
+  </div>
+);
+
+const AvatarFallback = ({ children }) => (
+  <span className="text-gray-600">{children}</span>
+);
+
+const Card = ({ children, className = "" }) => (
+  <div className={`bg-white rounded-lg shadow ${className}`}>{children}</div>
+);
+
+const CardHeader = ({ children }) => (
+  <div className="p-4 border-b">{children}</div>
+);
+
+const CardTitle = ({ children }) => (
+  <h3 className="text-lg font-semibold">{children}</h3>
+);
+
+const CardContent = ({ children }) => <div className="p-4">{children}</div>;
 
 const CustomButton = ({ children, className = "", onClick = () => {} }) => (
   <button
