@@ -7,19 +7,7 @@ function LoginModal({ onClose }) {
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Aquí iría la lógica de inicio de sesión
-    console.log(
-      "Inicio de sesión con:",
-      email,
-      password,
-      "Recuérdame:",
-      rememberMe
-    );
-
-    <link to="../pages/Dashboard"></link>;
-  };
+  const handleSubmit = (e) => {};
 
   const buttonClass =
     "px-4 py-2 text-white text-base font-medium rounded-lg w-full shadow-md focus:outline-none focus:ring-2";
@@ -41,15 +29,12 @@ function LoginModal({ onClose }) {
           <h3 className="text-lg leading-6 font-medium text-gray-900">
             Bienvenido a Split-it!
           </h3>
-          {/* Aca esta el form  */}
           <form className="mt-4 px-7 py-3 space-y-4" onSubmit={handleSubmit}>
-            {" "}
             <input
               type="email"
               className="w-full px-4 py-2 text-gray-700 border rounded-3xl focus:outline-none shadow-md hover:border-blue-600"
               placeholder="Correo electrónico"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
               required
             />
             <input
@@ -57,7 +42,6 @@ function LoginModal({ onClose }) {
               className="w-full px-4 py-2 text-gray-700 border rounded-3xl focus:outline-none shadow-md hover:border-blue-600"
               placeholder="Contraseña"
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
               required
             />
             <div className="flex justify-between items-center">
@@ -66,7 +50,6 @@ function LoginModal({ onClose }) {
                   type="checkbox"
                   id="rememberMe"
                   checked={rememberMe}
-                  onChange={(e) => setRememberMe(e.target.checked)}
                   className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded "
                 />
                 <label
@@ -81,7 +64,7 @@ function LoginModal({ onClose }) {
                 className="text-sm text-blue-600 hover:underline"
                 onClick={() => {
                   // Lógica para recuperación de contraseña
-                  console.log("Recuperar contraseña");
+                  alert("abrir pagina de cambio de pw");
                 }}
               >
                 ¿Olvidaste tu contraseña?

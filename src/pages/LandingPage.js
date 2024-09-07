@@ -10,6 +10,11 @@ function LandingPage() {
   const goToLogin = () => {
     navigate("/login");
   };
+
+  const goToMainPage = () => {
+    navigate("/mainpage");
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       <header className="bg-white shadow">
@@ -83,7 +88,10 @@ function LandingPage() {
         </div>
 
         <div className="text-center">
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-xl">
+          <button
+            onClick={goToMainPage}
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-xl"
+          >
             Comienza Ahora
           </button>
         </div>
